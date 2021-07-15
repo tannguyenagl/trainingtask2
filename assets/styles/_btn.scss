@@ -1,0 +1,63 @@
+.c-btn {
+  &__line {
+    width: 44px;
+    height: 1px;
+    background: #707070;
+    @include table {
+      width: 20px;
+    }
+  }
+  &__contact {
+    padding: 10px 51px;
+
+    border: 1px solid;
+    &--text {
+      line-height: 15px;
+      height: 15px;
+    }
+    &:hover {
+      background-color: white;
+      color: #1117ff;
+      border: 1px solid white;
+    }
+    @include table {
+      padding: 10px 20px;
+    }
+    @include mobile {
+      margin: 0px 20px;
+      margin-top: 10px;
+      text-align: center;
+      color: black;
+    }
+  }
+  &__about {
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    width: max-content;
+    color: #000000;
+    padding: 17px 105px;
+
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+    @include table {
+      padding: 10px 67px;
+    }
+    &--text {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 25px;
+      letter-spacing: 2.1px;
+      width: max-content;
+      margin: 0;
+      margin-right: 5px;
+
+      @include table {
+        font-size: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,176 @@
+$bgbanner1: url('../img/banner1.png');
+$bgbanner3: url('../img/banner3.png');
+
+.c-banner {
+  &__item1 {
+    position: relative;
+    z-index: 1;
+    background-image: $bgbanner1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(100% * 1180 / 1366);
+    margin-left: auto;
+    padding-top: calc(100% * (1180 / 1366) * (662 / 1180));
+
+    min-height: 535px;
+    @include mobile {
+      width: 90%;
+      padding-top: 60px;
+      padding-left: 15px;
+      padding-right: 15px;
+      min-height: unset;
+      padding-bottom: 60px;
+    }
+  }
+  &__content1 {
+    position: absolute;
+    left: 100px;
+    bottom: 94px;
+
+    @include mobile {
+      position: unset;
+    }
+  }
+  &__textcont1 {
+    font-family: yu gothic;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    line-height: 48px;
+    letter-spacing: 12.2px;
+    @include table {
+      font-size: 12px;
+      line-height: 20px;
+      margin-top: 15px;
+    }
+  }
+
+  &__texttit1 {
+    font-family: yu gothic;
+    font-size: 47px;
+    font-weight: 500;
+    color: white;
+    line-height: 88px;
+    letter-spacing: 27.73px;
+    margin-bottom: 25px;
+
+    @include table {
+      font-size: 30px;
+      line-height: 40px;
+    }
+    @include mobile {
+      font-size: 15px;
+      line-height: 22px;
+    }
+  }
+  &__item2 {
+    margin-top: calc(-100% * (1180 / 1366) * (662 / 1180) / 2 + 31px);
+    width: calc(100% * (750 / 1366));
+    padding-top: calc(100% * (750 / 1366) * (530 / 750));
+    background-image: linear-gradient(#c5d7f6, #fe9f33);
+    position: relative;
+    z-index: -1;
+    @include mobile {
+      width: 100%;
+      position: unset;
+      padding-top: 50%;
+    }
+  }
+
+  &__content2 {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    transform: rotate(90deg);
+    left: -60px;
+    @include mobile {
+      display: none;
+    }
+  }
+  &__linedown {
+    width: 136px;
+    height: 1px;
+    background: #0006ff;
+    margin-left: 12px;
+  }
+  &__texttit2 {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2.1px;
+    line-height: 25px;
+    color: #0006ff;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+
+    @include table {
+      font-size: 12px;
+    }
+  }
+
+  &__item3 {
+    margin-top: -46px;
+
+    padding-top: calc(100% * 423 / 1366);
+    position: relative;
+    min-height: 400px;
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &__child1 {
+    position: absolute;
+    width: calc(100% * 892 / 1366);
+    height: 100%;
+    background-image: $bgbanner3;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    right: 82px;
+    top: 6px;
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &__child2 {
+    position: absolute;
+
+    transform: translate(-50%);
+    color: #222222;
+    left: calc(41% + 3px);
+    top: 83px;
+  }
+
+  &__texttit3 {
+    font-family: yu gothic;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 37.2px;
+    letter-spacing: 9px;
+    margin-bottom: 44px;
+
+    @include mobile {
+      font-size: 15px;
+    }
+  }
+
+  &__textcont3 {
+    line-height: 30px;
+    font-family: yu gothic;
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    margin-bottom: 40px;
+
+    @include table {
+      font-size: 12px;
+      margin-bottom: 15px;
+      line-height: 22px;
+    }
+  }
+}
+p.c-banner__texttit2 {
+}
